@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Transaction</title>
+</head>
+<body>
+    <h2>Bank Transaction</h2>
+    <form action="/transaction" method="post">
+        <label for="account_number">Account Number:</label>
+        <input type="text" id="account_number" name="account_number" required><br><br>
+        
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" required><br><br>
+        
+        <label for="transaction_type">Transaction Type:</label>
+        <select id="transaction_type" name="transaction_type" required>
+            <option value="deposit">Deposit</option>
+            <option value="withdraw">Withdraw</option>
+        </select><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
