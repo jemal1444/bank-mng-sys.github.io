@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NASO Banking</title>
+  <!-- Link Styles -->
+<link rel="stylesheet"  href="{{ url_for('static',filename='styles/styleofhome.css') }}">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo_details">
+      <i class="bx bxl-audible icon"></i><h2>Core Banking</h2>
+     </div>
+	 
+    <ul class="nav-list">
+      <li>
+        <a href="#">
+          <i class="bx bx-grid-alt"></i>360 Views </a>
+      </li>
+      <li>
+        <a href="{{ url_for('user_management') }}">
+          <i class="bx bx-user"></i>User Management</a>
+      </li>
+      <li>
+	    <a href="{{ url_for('create_account') }}">
+          <i class="bx bx-chat"></i>Add New Account</a>
+		      <a href="{{ url_for('create_account') }}">
+          <i class="bx bx-chat"></i>Remove Account</a>
+		      <a href="{{ url_for('create_account') }}">
+          <i class="bx bx-chat"></i>Edit Account</a>
+		      <a href="{{ url_for('create_account') }}">
+          <i class="bx bx-chat"></i>Display All Accounts</a>
+		      <a href="{{ url_for('create_account') }}">
+          <i class="bx bx-chat"></i>Search an Account</a>
+		  
+		  
+      </li>
+      <li>
+        <a href="{{ url_for('transaction') }}">
+		<i class="bx bx-pie-chart-alt-2"></i>Transactions</a>
+      </li>
+	   <li>
+        <a href="{{ url_for('register') }}">
+          <i class="bx bx-folder"></i>Customer Registration</a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-folder"></i>Reports</a>
+      </li>
+    
+      <li class="profile">
+        <div class="profile_details">
+          <img src="profile.jpeg">
+          <div class="profile_content">
+          </div>
+        </div>
+     
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <div class="text">Dashboard</div>
+	
+	
+	
+	
+  </section>
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  
+</body>
+</html>
